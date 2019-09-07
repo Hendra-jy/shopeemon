@@ -21,5 +21,6 @@ Route::get('about', function () {
 });
 
 Route::get('mahasiswa', function () {
-    return view('mahasiswa');
+    $nama= 'hendra';
+    return view('mahasiswa',['nama'=> $nama]);
 });
