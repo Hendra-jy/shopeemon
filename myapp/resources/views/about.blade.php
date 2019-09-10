@@ -6,7 +6,7 @@
 <div class="container">
         <div class="row">
             <div class="col-10">
-                <h1 class="mt-2">about</h1>
+                <h1 class="mt-2">about<?php echo $nama?></h1>
             </div>
         </div>
     </div>

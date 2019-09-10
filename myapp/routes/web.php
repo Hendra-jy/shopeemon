@@ -11,16 +11,8 @@
 |
 */
 
-Route::get('/', function () {
-    return view('index');
-});
 
 
-Route::get('about', function () {
-    return view('about');
-});
-
-Route::get('mahasiswa', function () {
-    $nama= 'hendra';
-    return view('mahasiswa',['nama'=> $nama]);
-});
+Route::get('/', 'PagesController@home');
+Route::get('/about', 'PagesController@about');
+Route::get('/mahasiswa', 'MahasiswaController@index');
