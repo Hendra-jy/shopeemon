@@ -11,10 +11,9 @@
 |
 */
 
-Route::get('/', function () {
-<<<<<<< HEAD
-    return 'helo world';
-=======
-    return view('report');
->>>>>>> 0c49155d0a120f5742bb78fc94f2a729f4b79fab
-});
+// Route::get('/', function () {
+//     return view('report');
+// });
+
+Route::get('/','ReportController@index');
+Route::get('/Report/export_excel', 'ReportController@export_excel');
